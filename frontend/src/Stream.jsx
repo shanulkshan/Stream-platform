@@ -1,6 +1,5 @@
 import React from 'react';
 import Logo from './assets/Daco_240.png';
-import './Stream.css'
 
 
 const LiveStreamingPage = () => {
