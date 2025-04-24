@@ -34,7 +34,7 @@ const SignUp = () => {
         alert('Signup successful! You can now sign in.');
         navigate('/signin');
       } else {
-        setError(data.message || 'Signup failed.');
+        setError(data.error);
       }
     } catch (err) {
       console.error('Signup error:', err);

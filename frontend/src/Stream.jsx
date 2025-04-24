@@ -49,37 +49,37 @@ const LiveStreamingPage = () => {
             className="w-[1100px] h-[550px] object-cover"
             poster="https://cdn.britannica.com/69/228369-050-0B18A1F6/Asian-Cup-Final-2019-Hasan-Al-Haydos-Qatar-Japan-Takumi-Minamino.jpg"
           >
-            <source src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" type="video/mp4" />
+            <source src="https://media.istockphoto.com/id/2178925563/video/drone-footage-of-a-packed-american-football-stadium-at-night-showcasing-the-field-goalposts.mp4?s=mp4-640x640-is&k=20&c=V4-NmORyglDad7XbN0C6cfPx7zUo5as_-4FuagbRI5E=" type="video/mp4" />
           </video>
 
         </div>
 
         {/* Chat Section */}
-        <div className="chat-container">
-          <h2 className="chat-title text-4xl">CHAT</h2>
+        <div className="bg-gray-800 rounded-lg p-8 text-white ml-10">
+  <h2 className="text-4xl font-bold mb-4">CHAT</h2>
 
-          <div className="chat-messages">
-            <div className="chat-message">Message 1</div>
-            <div className="chat-message">Message 2</div>
-            <div className="chat-message">Message 3</div>
-            <div className="chat-message">Message 3</div>
-          </div>
+  <div className="flex flex-col gap-2">
+    <div className="bg-gray-700 p-2 rounded-md">Message 1</div>
+    <div className="bg-gray-700 p-2 rounded-md">Message 2</div>
+    <div className="bg-gray-700 p-2 rounded-md">Message 3</div>
+    <div className="bg-gray-700 p-2 rounded-md">Message 3</div>
+  </div>
 
-          <form className="chat-form">
-            <input
-              type="text"
-              placeholder="Add a comment..."
-              className="chat-input"
-            />
-          </form>
+  <form className="mt-4">
+    <input
+      type="text"
+      placeholder="Add a comment..."
+      className="w-full p-2 border border-gray-600 rounded-md outline-none focus:border-orange-600 box-border"
+    />
+  </form>
 
-          <section className="chat-subscribe-section">
-            <button className="chat-button">
-              SUBSCRIBE
-            </button>
-          </section>
+  <section className="bg-gray-700 p-4 mt-8 rounded-lg">
+    <button className="bg-orange-600 text-white px-4 py-2 mt-2 w-full h-[90px] rounded-md text-5xl border-none cursor-pointer transition-colors duration-300 hover:bg-orange-700">
+      SUBSCRIBE
+    </button>
+  </section>
+</div>
 
-        </div>
 
         {/* Related Matches */}
 

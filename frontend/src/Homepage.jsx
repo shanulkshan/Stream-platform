@@ -5,6 +5,7 @@ import footballImg from './assets/football.png';
 import soccerImg from './assets/soccer.jpg';
 import SportCard from './component/SportCard';
 import Footer from './component/footer';
+import {useEffect} from 'react'
 
 const sports = [
   { name: 'Rugby', image: 'https://img.icons8.com/ios/50/rugby--v1.png' },
@@ -16,6 +17,8 @@ const sports = [
 ];
 
 const Homepage = () => {
+
+
   return (
     <div className="bg-black text-white min-h-screen w-full">
       <Navbar />

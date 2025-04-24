@@ -9,6 +9,25 @@ import SignUp from './SignUp'
 import SignIn from './SignIn'
 
 function App() {
+
+
+  const isLoggedIn = !!localStorage.getItem("token");
+
+  if(!isLoggedIn){
+    return(
+      <BrowserRouter>
+      <Routes>
+      <Route path="/signin" element={<SignIn />} />
+      <Route path="/" element={< SportsPage/>} />
+        <Route path="/signup" element={<SignUp />} />
+        
+        
+
+        
+      </Routes>
+    </BrowserRouter>
+    )
+  }
  
   return (
     <BrowserRouter>

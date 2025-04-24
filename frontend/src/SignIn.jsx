@@ -24,7 +24,7 @@ const SignIn = () => {
         alert("Logged in successfully");
         navigate('/'); // redirect to /sport
       } else {
-        setError(data.message || "Invalid credentials");
+        setError(data.error);
       }
     } catch (err) {
       setError("Something went wrong");
